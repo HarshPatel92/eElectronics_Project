@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback Form</title>
+	<style>
+		/* Internal CSS styles */
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 2rem;
+			text-align: center;
+			margin: 2rem 0;
+		}
+		form {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,.1);
+			margin: 2rem auto;
+			max-width: 600px;
+			padding: 2rem;
+		}
+		label {
+			display: block;
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			display: block;
+			font-size: 1.2rem;
+			padding: .5rem;
+			width: 100%;
+		}
+		textarea {
+			height: 200px;
+			resize: vertical;
+		}
+		input[type="submit"] {
+			background-color: #007bff;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1.2rem;
+			margin-top: 1rem;
+			padding: .5rem 1rem;
+		}
+		input[type="submit"]:hover {
+			background-color: #0069d9;
+		}
+	</style>
+</head>
+<body>
+	<h1>Meeting Feedback Form</h1>
+	<form>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="meeting">Meeting Title</label>
+		<input type="text" id="meeting" name="meeting" required>
+
+		<label for="rating">Rate the meeting (1-10)</label>
+		<input type="number" id="rating" name="rating" min="1" max="10" required>
+
+		<label for="feedback">Your Feedback</label>
+		<textarea id="feedback" name="feedback" required></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
