@@ -1,3 +1,10 @@
-{% for f in foodlist %}
-  {{f.name}}
+{% for f in foodlist  %}
+
+{% if f.image %}
+
+{{f.name}}
+{{f.image}}
+<img src ={{f.image.url}}/>
+
+{% endif %}
 {% endfor %}
