@@ -13,4 +13,6 @@ urlpatterns = [
     path('detail/<int:pk>',FoodDetailView.as_view(),name='fooddetail'),
     path('addfile/',AddFileView.as_view(),name='addfile'),
     path('filelist/',FileListView.as_view(),name='filelist'),
+    path('employee/',EmployeeCreateView.as_view(),name ='employee')
+    
 ]

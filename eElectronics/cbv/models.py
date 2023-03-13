@@ -22,3 +22,10 @@ class AddFile(models.Model):
     class Meta:
         db_table = 'addfile'
         
+class Employee(models.Model):
+    email = models.EmailField()
+    
+    class Meta:
+        db_table = 'Employee'
+        
+        

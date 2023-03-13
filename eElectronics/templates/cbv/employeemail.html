@@ -1,0 +1,7 @@
+{% load crispy_forms_tags %}
+<form method='POST'>
+    {% csrf_token %}
+    {% comment %} {{form | crispy}} {% endcomment %}
+    {{form.email | as_crispy_field}}
+    <input type="submit" name="submit">
+</form>
